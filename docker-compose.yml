@@ -1,0 +1,11 @@
+name: awesome-Cloudflare-IPs
+services:
+  main:
+    image: uhub.service.ucloud.cn/syshub/awesome-cloudflare-ips
+    environment:
+      - HTML_URL=
+      - CLOUD_SDK_AK=
+      - CLOUD_SDK_SK=
+      - FALLBACK_DOMAIN=
+      - CLOUD_SDK_ENDPOINT=
+      - DOMAIN=

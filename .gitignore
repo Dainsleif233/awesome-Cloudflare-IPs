@@ -1,0 +1,7 @@
+.claude/
+.playwright/
+.playwright-cli/
+node_modules/
+.trae/
+.env
+ips.csv
