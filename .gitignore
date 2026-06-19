@@ -1,7 +1,5 @@
 .claude/
-.playwright/
-.playwright-cli/
-node_modules/
 .trae/
+.venv/
 .env
-ips.csv
+private-key.pem

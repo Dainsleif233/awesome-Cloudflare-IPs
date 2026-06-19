@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@huaweicloud/huaweicloud-sdk-dns": "^3.1.199",
-    "dotenv": "^17.4.2",
-    "playwright": "^1.61.0",
-    "uuid": "^14.0.0"
-  }
-}

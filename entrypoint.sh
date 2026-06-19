@@ -1,2 +1,3 @@
-node tsx fetch.ts
-node tsx update.ts
+python fetch.py
+python update.py
+python push.py
