@@ -1,4 +1,4 @@
-playwright>=1.48.0
+playwright==1.48.0
 python-dotenv==1.0.1
 huaweicloudsdkdns==3.1.200
 PyGithub==2.9.1

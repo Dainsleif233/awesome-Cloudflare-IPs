@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM python:3.12-slim
 LABEL maintainer="dainsleif@yeah.net"
 WORKDIR /app
 
