@@ -9,3 +9,4 @@ services:
       - APP_ID=
       - INSTALLATION_ID=
       - REPO=
+      - BRANCH=

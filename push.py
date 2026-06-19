@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 import os
+from dotenv import load_dotenv
 from github import Github, Auth
 
+load_dotenv()
 
 APP_ID = os.getenv("APP_ID")
-INSTALLATION_ID = os.getenv("INSTALLATION_ID")
+INSTALLATION_ID = int(os.getenv("INSTALLATION_ID"))
 
 REPO = os.getenv("REPO")
 BRANCH = os.getenv("BRANCH", "main")
-COMMIT_MESSAGE = os.getenv("COMMIT_MESSAGE", "Update ips.")
+COMMIT_MESSAGE = os.getenv("COMMIT_MESSAGE", "Update IPs.")
 
 def check_env_vars():
     if not APP_ID or not INSTALLATION_ID or not REPO:
@@ -40,7 +42,7 @@ def update_file_with_github_app():
         return
 
     try:
-        with open("ips.csv", "r") as file:
+        with open("ips.csv", "r", encoding="utf-8") as file:
             new_content = file.read()
     except Exception as e:
         print(f"❌ 读取文件失败: {e}")
@@ -62,4 +64,5 @@ def update_file_with_github_app():
         print(f"❌ 更新文件失败: {e}")
 
 if __name__ == "__main__":
+    check_env_vars()
     update_file_with_github_app()
