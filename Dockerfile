@@ -7,7 +7,7 @@ COPY update.py .
 COPY push.py .
 COPY requirements.txt .
 COPY --chmod=0755 entrypoint.sh /usr/local/bin/
-RUN pip install -r requirements.txt && playwright install webkit
+RUN pip install -r requirements.txt && playwright install webkit && playwright install-deps webkit
 
 ENTRYPOINT ["entrypoint.sh"]
 VOLUME ["/app/private-key.pem"]
