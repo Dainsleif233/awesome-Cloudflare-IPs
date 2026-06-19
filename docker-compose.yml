@@ -10,3 +10,5 @@ services:
       - INSTALLATION_ID=
       - REPO=
       - BRANCH=
+    volumes:
+      - ./private-key.pem:/app/private-key.pem
